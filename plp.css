@@ -1,0 +1,407 @@
+:root {
+    --blue: #5ba5d4;
+    --dark-blue: #226c9a;
+    --nav: rgb(221, 238, 253);
+    /* --nav:#ccdeec; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: 0.2s linear;
+    text-decoration: none;
+    font-family: 'Lora', serif;
+    /* font-family: Helvetica; */
+    color: black;
+    scroll-behavior: smooth;
+    font-size: 1rem;
+    box-sizing: border-box;
+    /* box-sizing: border-box; */
+    /* overflow-x: hidden; */
+}
+
+.nav-space {
+    height: 9vh;
+}
+
+.navbar {
+    width: 100vw;
+    overflow: auto;
+    white-space: no-wrap;
+    height: 9vh;
+    background-color: var(--nav);
+    /* background-color: rgb(164, 162, 162); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+}
+
+.nav-logo {
+    margin-left: 40px;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.nav-contents {
+    display: flex;
+}
+
+.nav-contents a {
+    margin: 20px;
+}
+
+.nav-contents a:hover {
+    color: rgb(0, 103, 194);
+    /* color: grey; */
+    transform: scale(1.1);
+}
+
+.nav-search {
+    margin-right: 40px;
+}
+
+.search-input {
+    width: 180px;
+}
+
+.home {
+    background-image: url("guitar-bg.jpg");
+    /* background-image: url("adrian-korte-5gn2soeAc40-unsplash.jpg"); */
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+.home-contents {
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    text-align: center;
+}
+
+.Headings {
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.shop-now-btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    align-self: center;
+    margin-top: 20px;
+    border: 0.5px solid var(--dark-blue);
+    text-align: center;
+}
+
+.shop-now-btn:hover {
+    background-color: var(--nav);
+    /* background-color:rgb(164, 162, 162); */
+    transform: scale(1.08);
+}
+
+/* about-us starts here */
+.nav-space-about {
+    height: 9vh;
+    display: flex;
+}
+
+.nav-1 {
+    width: 50vw;
+    background-color: var(--blue);
+}
+
+.nav-2 {
+    width: 50vw;
+    background-color: var(--dark-blue);
+}
+
+.About-Us {
+    height: 91vh;
+    display: flex;
+}
+
+.About-Us .Headings {
+    color: var(--nav);
+    margin-right: 100px;
+}
+
+.con {
+    margin-left: 100px;
+}
+
+.about-content {
+    width: 50vw;
+    height: 91vh;
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about-brand-des {
+    width: 450px;
+    color: var(--nav);
+    /* margin-bottom: 100px; */
+    margin-right: 100px;
+    text-align: center;
+}
+
+.abt-img-container {
+    background-color: var(--blue);
+    width: 50vw;
+    height: 91vh;
+}
+
+.abt-img-container-2 {
+    background-color: var(--dark-blue);
+    width: 50vw;
+    height: 91vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.abt-img-container img {
+    width: 350px;
+    /* position: relative; */
+
+}
+
+/* products section starts here */
+.products-bar {
+    height: 15vh;
+    background-color: var(--dark-blue);
+}
+
+.products {
+    height: 79vh;
+    background-color: #e1e4eb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.products-row1 {
+    width: 100vw;
+    display: flex;
+    margin-top: 150px;
+    justify-content: space-between;
+}
+
+.products-row1 div {
+    margin: 0px 100px;
+}
+
+.products-row1 a {
+    margin: 0px 100px;
+    
+}
+
+.products-row1 a:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    color: var(--dark-blue);
+}
+
+.products-row2 {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.products-box {
+    background-color: var(--blue);
+    border-radius: 20px;
+    height: 320px;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2.5vh;
+    border: 1px solid black;
+
+}
+
+.products-box img {
+    width: 220px;
+    border-radius: 20px;
+    align-self: center;
+    border: 1px solid black;
+}
+
+.products-btn {
+    background-color: var(--dark-blue);
+    border-radius: 20px;
+    height: 30px;
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.products-btn a {
+    color: var(--nav);
+}
+
+.products-btn a:hover {
+    transform: scale(1.11);
+    cursor: pointer;
+    color: white;
+}
+.products-end{
+    width: 100vw;
+    height: 6vh;
+    margin-top: 110px;
+    background-color: var(--dark-blue);
+  
+}
+
+/* contact us section starts here */
+.contact-us-nav-space {
+    background-color: var(--dark-blue);
+    height: 15vh;
+}
+.Contact{
+    background-color: var(--nav);
+}
+
+.contact-container {
+    width: 100vw;
+    height: 75vh;
+    background-color: var(--nav);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-subcontainer {
+    width: 70vw;
+    height: 75vh;
+    background-color: var(--nav);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+
+.new {
+    display: flex;
+    align-items: center;
+}
+
+.written {
+    width: 400px;
+    margin-right: 80px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.written0 {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.written2 {
+    font-size: 1.1rem;
+    width: 300px;
+    margin: 100px, 0px;
+    text-align: center;
+}
+
+.fa-comments {
+    color: black;
+    font-size: 5rem;
+    align-self: center;
+    margin-bottom: 30px;
+    color: #226c9a;
+}
+
+.written-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 40px;
+
+    margin-top: 30px;
+    background-color: var(--blue);
+}
+
+.contact-submit-box {
+    background-color: var(--blue);
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    height: 58vh;
+    border-radius: 5px;
+    /* margin-bottom: -105px; */
+}
+
+.formss {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.f {
+    width: 370px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: var(--nav);
+    border-radius: 7px;
+}
+
+.icons-row {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    height: 8vh;
+    background-color: var(--dark-blue);
+    position: relative;
+    top: 72px;
+}
+
+i {
+    font-size: 1.5rem;
+    margin: 2vh 50px;
+    color: var(--nav);
+
+}
+
+.btn {
+    margin-top: 15px;
+    margin-bottom: 45px;
+    background-color: var(--nav);
+}
+
+textarea {
+    background-color: var(--nav);
+    border: 1.5px solid black;
+    border-bottom: 2px grey solid;
+    border-right: 2px solid;
+    border-radius: 7px;
+}
+
+i {
+    /* color: var(--dark-blue); */
+    margin-bottom: 20px;
+}
